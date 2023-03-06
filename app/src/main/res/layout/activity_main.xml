@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/light_grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:background="@color/light_grey">
+
+        <ImageView
+            android:id="@+id/imageview_logo"
+            android:layout_width="366dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="100dp"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            app:srcCompat="@drawable/ic_logo"
+            android:minWidth="300dp"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_main_head"
+            android:layout_marginTop="30dp"/>
+<!--            android:text="Designed with Android Studio"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_below="@+id/imageview_logo"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat"/>-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_login"
+            android:text="Login"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/imageview_logo"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register"
+            android:text="register"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/button_login"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
